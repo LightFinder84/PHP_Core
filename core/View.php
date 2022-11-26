@@ -37,11 +37,7 @@
 
         public function userHeaderContent(){
             ob_start();
-            if(Application::isLogined()){
-                require_once Application::$rootPath."/view/partials/header-logined.php";
-            } else {
-                require_once Application::$rootPath."/view/partials/header.php";
-            }
+            require_once Application::$rootPath."/view/partials/header.php";
             return ob_get_clean();
         }
 

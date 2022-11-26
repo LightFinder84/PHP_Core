@@ -19,12 +19,7 @@
     $database = new Database($config['db']);
 
     require_once __DIR__."/../router/homeRouter.php";
-    require_once __DIR__."/../router/accountRouter.php";
-    require_once __DIR__."/../router/authRouter.php";
-    require_once __DIR__."/../router/cartRouter.php";
-    require_once __DIR__."/../router/productRouter.php";
-    require_once __DIR__."/../router/voucherRouter.php";
-    
+    require_once __DIR__."/../router/authRouter.php";    
     
     $app->run();
 
